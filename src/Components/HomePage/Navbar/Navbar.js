@@ -10,7 +10,7 @@ const Navbar = () => {
     // check for admin
     useEffect(() => {
         if(user.signed) {
-            fetch(`http://localhost:5000/checkAdmin/${user.email}`)
+            fetch(`https://creative-agency-bd.herokuapp.com/checkAdmin/${user.email}`)
             .then(res => res.json())
             .then(data => {
                 setAdmin(data);

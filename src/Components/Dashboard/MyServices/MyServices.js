@@ -7,7 +7,7 @@ const MyServices = () => {
 
     // loading user's orders
     useEffect(() => {
-        fetch(`http://localhost:5000/allOrders/${user.email}`)
+        fetch(`https://creative-agency-bd.herokuapp.com/allOrders/${user.email}`)
         .then(res => res.json())
         .then(data => setMyOrders(data))
     }, [user.email])

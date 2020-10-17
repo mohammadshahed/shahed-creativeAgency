@@ -14,7 +14,7 @@ const Dashboard = () => {
 
     // check for admin
     useEffect(() => {
-        fetch(`http://localhost:5000/checkAdmin/${user.email}`)
+        fetch(`https://creative-agency-bd.herokuapp.com/checkAdmin/${user.email}`)
         .then(res => res.json())
         .then(data => {
             setIsAdmin(data);

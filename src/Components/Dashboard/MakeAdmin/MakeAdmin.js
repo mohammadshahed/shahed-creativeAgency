@@ -14,7 +14,7 @@ const MakeAdmin = () => {
     function makeAdmin(e) {
         e.preventDefault();
         
-        fetch('http://localhost:5000/makeAdmin', {
+        fetch('https://creative-agency-bd.herokuapp.com/makeAdmin', {
             method: 'POST',
             headers: {'Content-type':'application/json'},
             body: JSON.stringify(newAdmin)

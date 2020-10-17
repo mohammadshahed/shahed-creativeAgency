@@ -2,12 +2,12 @@ import React from 'react';
 import './Companies.css';
 import google from '../../../Images/google.png';
 import airbnb from '../../../Images/airbnb.png';
-import netflix from '../../../Images/netflix.png';
-import slack from '../../../Images/slack.png';
+import pathao from '../../../Images/pathao.png';
+import shohoz from '../../../Images/shohoz.png';
 import uber from '../../../Images/uber.png';
 
 const Companies = () => {
-    const companies = [slack, uber, google, netflix, airbnb];
+    const companies = [shohoz, uber, google, pathao, airbnb];
 
     return (
         <section id="companies">

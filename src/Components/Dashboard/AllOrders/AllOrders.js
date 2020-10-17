@@ -8,7 +8,7 @@ const AllOrders = () => {
 
     // loading all orders
     useEffect(() => {
-        fetch('http://localhost:5000/allOrders')
+        fetch('https://creative-agency-bd.herokuapp.com/allOrders')
             .then(res => res.json())
             .then(data => setAllOrders(data))
     }, [user.email])
@@ -19,7 +19,7 @@ const AllOrders = () => {
         document.getElementById('update').innerText = 'Updateding Changes';
 
         // updating status
-        fetch(`http://localhost:5000/edit/${id}`, {
+        fetch(`https://creative-agency-bd.herokuapp.com/edit/${id}`, {
             method: 'PATCH',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(modifiedOrder)

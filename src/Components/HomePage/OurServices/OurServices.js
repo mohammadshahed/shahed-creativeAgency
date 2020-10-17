@@ -7,7 +7,7 @@ const OurServices = () => {
 
     // load all services
     useEffect(() => {
-        fetch('http://localhost:5000/allServices')
+        fetch('https://creative-agency-bd.herokuapp.com/allServices')
         .then(res => res.json())
         .then(data => setAllServices(data))
     }, [])

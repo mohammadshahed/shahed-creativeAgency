@@ -5,7 +5,7 @@ const Review = () => {
 
     // loading all reviews
     useEffect(() => {
-        fetch('http://localhost:5000/allReviews')
+        fetch('https://creative-agency-bd.herokuapp.com/allReviews')
         .then(res => res.json())
         .then(data => setAllReviews(data))
     },[])
