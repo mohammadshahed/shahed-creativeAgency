@@ -21,7 +21,7 @@ const Order = () => {
     function addOrder(e) {
         e.preventDefault();
         
-        fetch('https://immense-wildwood-27777.herokuapp.com/addOrder', {
+        fetch('http://localhost:5000/addOrder', {
             method: 'POST',
             headers: {'Content-type':'application/json'},
             body: JSON.stringify(newOrder)
@@ -35,7 +35,7 @@ const Order = () => {
     }
 
     return (
-        <section id="order" className="p-4">
+        <section id="order" className="p-4"np>
             <div className="container">
                 <h3>Order</h3>
                 <div className="row">

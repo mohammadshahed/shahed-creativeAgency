@@ -7,7 +7,7 @@ const OurServices = () => {
 
     // load all services
     useEffect(() => {
-        fetch('https://immense-wildwood-27777.herokuapp.com/allServices')
+        fetch('http://localhost:5000/allServices')
         .then(res => res.json())
         .then(data => setAllServices(data))
     }, [])

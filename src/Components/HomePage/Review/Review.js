@@ -5,7 +5,7 @@ const Review = () => {
 
     // loading all reviews
     useEffect(() => {
-        fetch('https://immense-wildwood-27777.herokuapp.com/allReviews')
+        fetch('http://localhost:5000/allReviews')
         .then(res => res.json())
         .then(data => setAllReviews(data))
     },[])

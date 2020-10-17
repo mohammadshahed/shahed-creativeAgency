@@ -17,7 +17,7 @@ const MyReview = () => {
     function addReview(e) {
         e.preventDefault();
         
-        fetch('https://immense-wildwood-27777.herokuapp.com/addReview', {
+        fetch('http://localhost:5000/addReview', {
             method: 'POST',
             headers: {'Content-type':'application/json'},
             body: JSON.stringify(newReview)

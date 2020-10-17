@@ -26,7 +26,7 @@ const AddService = () => {
         formData.append('name', newService.name);
         formData.append('description', newService.description);
         
-        fetch('https://immense-wildwood-27777.herokuapp.com/addService', {
+        fetch('http://localhost:5000/addService', {
             method: 'POST',
             body: formData
         })

@@ -8,7 +8,7 @@ const AllOrders = () => {
 
     // loading all orders
     useEffect(() => {
-        fetch('https://immense-wildwood-27777.herokuapp.com/allOrders')
+        fetch('http://localhost:5000/allOrders')
             .then(res => res.json())
             .then(data => setAllOrders(data))
     }, [user.email])
@@ -19,7 +19,7 @@ const AllOrders = () => {
         document.getElementById('update').innerText = 'Updateding Changes';
 
         // updating status
-        fetch(`https://immense-wildwood-27777.herokuapp.com/edit/${id}`, {
+        fetch(`http://localhost:5000/edit/${id}`, {
             method: 'PATCH',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(modifiedOrder)
