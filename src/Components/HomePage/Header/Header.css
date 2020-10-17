@@ -1,0 +1,17 @@
+header {
+    background: linear-gradient(175deg, #fbd062 75%, white 60%);
+    min-height: 780px;
+    margin-bottom: -100px;
+}
+@media(max-width: 990px) {
+    header {
+        min-height: 700px;
+        margin-bottom: -150px;
+    }
+}
+@media(max-width: 770px) {
+    header {
+        min-height: 950px;
+        margin-bottom: -200px;
+    }
+}
