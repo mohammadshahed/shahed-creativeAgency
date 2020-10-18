@@ -3,6 +3,7 @@
 /.pnp
 .pnp.js
 .env
+src/config/
 
 # testing
 /coverage
